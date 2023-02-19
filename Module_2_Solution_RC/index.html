@@ -8,28 +8,34 @@
     <link href="CSS/styles.css" type="text/css" rel="stylesheet">
 <style>
 
-/***Desktop***/
-@media (min-width: 992px) {
-        div > div {width: 25%;
-            float: left;}
+/***Mobile View***/
+@media (max-width: 767px)
+    { div > div {margin: 3%;} }
 
 /***Tablet***/
 @media (min-width: 768px) and (max-width: 991px)
-{ .box {width: 50%;
-        float: left;}
-    
-}
+{   div > div {float: left;}
+    .box {width: 44%; height: 325px; overflow: auto;
+        margin-top: 3%; margin-right: 3%;
+        margin-left: 3%;}
+    .box1 > p {margin-top: 3%; }
+    }
    
-
-/***Mobile View***/
-/*@media (max-width: 767px)
-{ div > div {margin: 3%;} }
+/***Desktop***/
+@media (min-width: 992px) {
+        .box, .box1 {width: 25%;
+                    float: left;
+                    margin-bottom: 10px;
+                    margin-top: 50px;
+                    margin-left: 70px;
+                    margin-right: 10px;}
+    }
                
 </style>
 </head>
 <body>
 	<h1>Menu</h1>
-    <div>
+    <div id="container">
         <div class="box">
             <h2 id="chick">Chicken</h2>
             <p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.</p>
@@ -38,7 +44,7 @@
             <h2 id="moo">Beef</h2>
             <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p>
         </div>
-        <div>
+        <div class="box1">
             <h2 id="fish">Sushi</h2>
             <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
         </div>

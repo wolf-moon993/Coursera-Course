@@ -1,11 +1,15 @@
 /***Base Style***/
-* {box-sizing: border-box;}
+* {box-sizing: border-box; margin: 0%;}
 body {font-family: Arial, serif;
     position: relative;
-    font-size: 1.25em;}
+    font-size: 1.25em;
+    background-color: rgb(252, 231, 178);}
 h1 {font-family: Tahoma, sans-serif;
     text-align: center;
-    color: rgb(18, 95, 55);}
+    color: rgb(18, 95, 55);
+    background-color: whitesmoke;
+    margin-top: 3%;
+}
             
 h2 {border-left: solid black 1px;
     border-bottom: solid black 1px;
@@ -14,7 +18,7 @@ h2 {border-left: solid black 1px;
     float: right; clear: both;}
             
 p {text-align: center-left;
-    padding: 1%;
+    padding: 3%;
     margin-top: 10%;}
             
 div > div {border-style: solid;
@@ -23,7 +27,7 @@ div > div {border-style: solid;
         background-color: rgb(184, 237, 247);
         margin: 3%;}
             
-            
+#container {margin: 0%; width: 100%;}
 #chick {background-color: rgb(135, 233, 202);}
             
 #moo {background-color: rgb(213, 103, 134);}
